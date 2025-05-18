@@ -55,6 +55,31 @@
       height: 1rem;
       fill: currentColor;
     }
+    /* Grid for reports */
+    .report-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .report-grid a {
+      text-decoration: none;
+      color: inherit;
+      text-align: center;
+    }
+    .report-grid img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      display: block;
+      border: 1px solid #eee;
+      border-radius: 0.25rem;
+    }
+    .report-grid .title {
+      margin-top: 0.5rem;
+      font-size: 0.875rem;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
@@ -93,5 +118,20 @@
       </a>
     </nav>
   </header>
+  <section class="report-grid">
+      <a href="report1.pdf" target="_blank">
+        <img src="thumb-report1.png" alt="Report 1">
+        <span class="title">Master Thesis - River Basin Management </span>
+      </a>
+      <a href="report2.pdf" target="_blank">
+        <img src="thumb-report2.png" alt="Report 2">
+        <span class="title">Literature Review - Facial Recognition</span>
+      </a>
+      <a href="report3.pdf" target="_blank">
+        <img src="pdm01.png" alt="Report 3">
+        <span class="title">Essay - Quantifying Ourselves</span>
+      </a>
+      <!-- Add more tiles as needed -->
+  </section>
 </body>
 </html>
