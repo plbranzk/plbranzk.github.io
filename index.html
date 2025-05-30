@@ -13,12 +13,18 @@
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       background: #fff;
       color: #000;
       line-height: 1.5;
       padding: 2rem;
+    }
+
+    .page-wrapper {
+      max-width: 800px;
+      margin: 0 auto;
     }
 
     /* -------------------------------
@@ -83,7 +89,7 @@
        REPORT GRID STYLING
     -------------------------------- */
     .report-grid {
-      width: 60%;
+      width: 100%;
       margin: 2rem auto 0;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -131,7 +137,6 @@
       }
 
       .report-grid {
-        width: 90%;
         grid-template-columns: repeat(2, 1fr);
       }
     }
@@ -148,7 +153,9 @@
     }
   </style>
 </head>
+
 <body>
+  <div class="page-wrapper">
 
   <!-- HEADER -->
   <header>
@@ -214,8 +221,10 @@
       <a href="governance_analysis.pdf" target="_blank">
         <img src="Tagebau_Jänschwalde_Entwässerungsbrunnen.JPG" alt="Report 9">
         <span class="title">Tagebau Jänschwalde - Governance Analysis</span>
+        
       </a>
       <!-- Add more tiles as needed -->
   </section>
+  </div>
 </body>
 </html>
